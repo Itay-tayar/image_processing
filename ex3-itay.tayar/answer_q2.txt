@@ -1,0 +1,3 @@
+The size of the filter size is controlling the blurring between the adges of the two pictures.
+As the size is getting bigger the blurring accrue on more pixels in the blended picture.
+This happen because when the filter is big the mean is accruing in the convolution on more pixels.

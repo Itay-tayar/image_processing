@@ -1,0 +1,5 @@
+Question 3 answer:
+The difference between the two derivative is that in the convolution derivative,
+we used an approximation of the derivative formula by calculating the difference between two close pixels.
+On the other hand in the fourier derivative, we used the fourier transform of the
+exact derivative formula, which it's not an approximation of it.

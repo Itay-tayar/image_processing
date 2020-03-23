@@ -1,0 +1,3 @@
+As we are creating the laplacian pyramid, we change each level and what happens is that we are losing
+the high frequencies. That's mean that in the biggest level we have in the pyramid we will have almost only low
+frequencies. So if we multiply each level by different values we will control the frequencies in the final image.

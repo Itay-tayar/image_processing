@@ -1,0 +1,18 @@
+In order to achieve high-res image from low-res image we will work as the follow:
+1. Take a dataset of high resolution images.
+2. Build new corruption_func that will reduce the image resolution, and do it by blurring and sub-sampling it randomly,
+   then expand it to the former resolution in order to use the ResNet blocks properly.
+   By using this function we'll have a lower resolution image that was randomly scaled,
+   to keep the robustness of the network.
+3. Train the model with using the corruption_func and the high resolution images.
+
+When the training will end we'll have a model that will be able to predict the high resolution image
+out of a low resolution image using the restore_image function, by expanding the image to the desirable
+resolution and using predict.
+
+We must pay attention to the pixel size, meaning:
+It is important that when we train the model using ResNet we the images the dimensions need to stay the same,
+meaning that the expanded into the corresponding dimensions after the randomly blurred and sub-sampled high resolution
+image is necessary so the image would to fit the model.
+While we predict, we must pass the image in the desired dimensions because that is that the network is trained for -
+receive a low resolution and predict a high resolution, without changing the dimensions.

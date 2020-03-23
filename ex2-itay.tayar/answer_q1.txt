@@ -1,0 +1,9 @@
+Question 1 answer:
+In the "change_samples" function, we convert the signal to the frequency domain
+by using DFT, and we delete some of the highest frequencies.
+In "change_rate" function, the speed up happens by reducing the intervals between
+the samples (reducing the time between playing each sample) in the time domain. In the frequency
+domain, it will change the frequencies to higher frequencies.
+That's why in "change_samples" function we don't get higher frequencies than the original signal.
+More than that, the high frequencies are less significant for the signal than the lower frequencies,
+so the general structure of the signal doesn't change.

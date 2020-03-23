@@ -1,0 +1,4 @@
+Question 2 answer:
+on the one hand the "resize_vocoder" function resize each row by using the phase of the signal.
+On the other hand the phase "resize_spectrogram" resize each row in the spectrogram by using the frequency information
+of the signal, and that is why there is a difference.

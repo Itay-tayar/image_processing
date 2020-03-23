@@ -1,0 +1,10 @@
+The more residual blocks we have, the depth is higher, the val_loss goes slightly smaller,
+and that's mean that the network works better on the validation set. From that we can understand that the result
+of the network is better and also the prediction of either the blurred text and the noisy image.
+To sum it up, the deeper the network is, the better the result.
+
+In terms of the plot, the answer holds. The incline  is decreasing, and the results are respectively improving.
+
+We could also notice that the incline is steep in the beginning and getting moderate towards the end. From that
+we can understand that the first blocks are more important and it is not necessary
+that using 20 blocks could give a better result. On another problem it would probably not be the same.

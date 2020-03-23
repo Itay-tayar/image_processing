@@ -1,0 +1,4 @@
+The calculation of q divide by the number of pixels in the
+current segment.
+Then If one of the divisions will have no pixels, the procedure will crash because it will get
+division by zero

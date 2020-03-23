@@ -1,0 +1,3 @@
+The result here will be similar to question 2, only here the it's happen for another reason. The deeper
+the pyramid level is the lower frequencies are getting more significant and the blending will be smoother and
+accurate int the colors and edges.
